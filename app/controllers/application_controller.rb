@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    before_action :authorized
+    before_action :authorized_user
 
 
     def encode_token(payload)

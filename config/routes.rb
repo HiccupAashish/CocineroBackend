@@ -11,7 +11,6 @@ Rails.application.routes.draw do
     namespace :v2 do
       resources :chefs
       post '/chef/login', to:"admin#create"
-      post '/chef/:id/like', to:"like#create"
     end
 
   end

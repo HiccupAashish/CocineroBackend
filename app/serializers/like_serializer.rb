@@ -1,3 +1,4 @@
 class LikeSerializer < ActiveModel::Serializer
-  attributes :id
+  include FastJsonapi::ObjectSerializer
+  attributes :chef_id
 end

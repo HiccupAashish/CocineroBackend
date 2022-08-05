@@ -1,5 +1,5 @@
 class Api::V2::AdminController < ApplicationController
-    skip_before_action :authorized
+    skip_before_action :authorized_user
 
     def create
         @chef = Chef.find_by(email: admin_params[:email])

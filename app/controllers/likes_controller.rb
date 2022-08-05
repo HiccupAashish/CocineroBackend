@@ -1,9 +1,13 @@
 class LikesController < ApplicationController
-    before_action :find_chef
-    # before_action :authenticate
+    # before_action :find_chef
+    def index
+        @likes=Like.all
+        render json: {like: LikeSerializer.new(@like)}
+    end
    def create
-    @chef.likes.create(user_id :current_user.id)
-        if @chef
+    @like=current_user.likes.new(like_params)
+    # @chef.likes.create(user_id :current_user.id)
+        if @like.save
             render json: {chef: "Liked"}
         else
             render json: {error: "Like failed"}
@@ -12,6 +16,11 @@ class LikesController < ApplicationController
 
    private
    def find_chef
-    @chef=Chef.find(params[:id])
+    @chef=Chef.find(like_params)
+   end
+
+   def like_params
+    # raise params.inspect
+    params.require(:like).permit(:chef_id)
    end
 end

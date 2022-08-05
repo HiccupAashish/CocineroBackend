@@ -1,5 +1,5 @@
 class Api::V2::ChefsController < ApplicationController
-    skip_before_action :authorized
+    skip_before_action :authorized_user
     before_action :authorize_chef, except: [:create, :index]
     def index
         @chefs=Chef.all
