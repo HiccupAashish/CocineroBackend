@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "app8map",
+  "private_key_id": "d8ab42c85df527a9a6c0e06c27677531ef219f3b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDInaVaI5oIGJKc\nSgUZSZ7ENMsH5nLcBXPG9QmjWflpi6ulMHFpfDvt254cgEjba0O7bAxDBh9tEW+3\n5ko/IcWKCpWs0KWcu2rZkhO56jGLcYx+JjCpt+SphC/1E4p4hs497VjpKp77UcIU\nmVyvm/FofERFiMfXsSA5kTm57UC2rGF4ZxscZJvL77dtrUGHwZYwJ4A8PU9sDZDg\nCl/25etEx20KjZu+kujlCmT6X/GLy+TIx0xgp+K6bbQnm07KgnYx8j7WoN9oBU89\nXU1cBZWYJ52qm3jNQdgU4ivgLUuOrCrOtgsP/HhP4rr9pzPqHKX+UcFZtp5wXRUO\nWz7vxEFjAgMBAAECggEAGXRjRCYrR6ayh5Eex4AfXH7kWgrD/SXV9GMoB2mFq340\n179nTH6ebgZFMBGY7PpVvESv45s1xpWFSty2A/+pfGPubOCGevYOzy9pQFg2VB6i\nuGjpGMfEBDxJB3wkwDk+lv30H5WwWWwcx5dT+tY7EcpesUHzNWt8jsFeBTjU0rig\nG9XqekZe//rZUAtdlfkBvadWCjOpX8c0G+WRhyGaJmzpCzdpDcL3EK3GVLdgQcb1\nMkT5R8xKdCmwZVVVMEBB/zF5F4mwDFnR+4/TlFuCPk5QcrFeV2mdyauJJZUitQ9S\neQdFH+xHOJ6kF6uBrp9/nhSXjNceQndtLHJ+iHTClQKBgQDlcyWBENAvoOPBGK50\n94rnOFhXVp9EymMGjmDwNThEbeBnUP7yPoXfn8aDesAx/9QMqjeW9u4V/z/nrBaX\n2Aw7GUbSIWQDQh8LjFy+Utu9T1hpT89Pd09dQ8Cxd3n6LfpTQ019yO0gI0OSiNh9\n1WrXL2jGxbsa/gtA8J512ljsxwKBgQDf1F4VnSfNLdZmtCoUe/AxT3wror6ErxoQ\nzdTNADdBhbPrMuqoS1RbZyJydEH1uaXU2V1nKYzn+mSwLJd+TGt6m/EJwwVtZQes\nFwhP+wugGxshTEmg1n60Cf9rUfy3x+s50VTAd/NuvlXlgLfzHB+wzhKJJkmFlWT5\nG/o8FfrShQKBgEuUxoHhW/KUePGeg7kb4bGQqej7K7OpRz1doSj/Hu3Lk+P0lkaN\nueOT6fxdbvoJX3xchbtA0+SDFDXoRfj2vfCpvt5xCVTZbwiKz/IRsTiG7oSiOZPf\npVD/hHXw+Ukj5BWRUfFhQlsXwqZ+VXH93xfLEiSH9b5KeMKHgGsp5aj5AoGBAKUD\nsAlHP1yo+nPlR1Cqvr3b17Nj3Al9/j19QfGQwyvvImG3vAAu6RYpxt+Sjj5Wi8eM\nKKwxmcw8cZbgiR93v5U4+k80FAA+h5V7tYkhj8SNt0apM278M5UP+dppK2NiZCzQ\nAyeSR0nR0QnOB8+XYFW81zV9oJ53MWXmFmnN2ojxAoGAAlHMdvaB11ZqOkM/wMwq\nKgNkdZGCo+yxoHcyJys4dRMqNjTJ8MHoh7H77UA/5kSVls/S9UHePPW0s1BW9K5Q\nkMZUrm4isWITyVqiQKASFHJYtExATJM6QMih5X69jVSIb+gi2yaAkaMignPQkVqG\nWJ/hUb42iXeAE5hMYxVDjSU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cocineroapp@app8map.iam.gserviceaccount.com",
+  "client_id": "116041342329824041777",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cocineroapp%40app8map.iam.gserviceaccount.com"
+}
