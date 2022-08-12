@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_05_075057) do
+ActiveRecord::Schema.define(version: 2022_08_10_025949) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -57,6 +57,22 @@ ActiveRecord::Schema.define(version: 2022_08_05_075057) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "bookings", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "chef_id", null: false
+    t.string "offered_"
+    t.string "price"
+    t.string "date"
+    t.string "user_name"
+    t.string "guest_count"
+    t.string "address"
+    t.string "status"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chef_id"], name: "index_bookings_on_chef_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
   create_table "chefs", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -71,6 +87,16 @@ ActiveRecord::Schema.define(version: 2022_08_05_075057) do
     t.string "img1"
     t.string "img2"
     t.string "img3"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "chef_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "comment"
+    t.index ["chef_id"], name: "index_comments_on_chef_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "likes", force: :cascade do |t|
@@ -111,6 +137,10 @@ ActiveRecord::Schema.define(version: 2022_08_05_075057) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "bookings", "chefs"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "comments", "chefs"
+  add_foreign_key "comments", "users"
   add_foreign_key "likes", "chefs"
   add_foreign_key "likes", "users"
   add_foreign_key "sightings", "birds"

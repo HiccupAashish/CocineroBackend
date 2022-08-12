@@ -14,6 +14,16 @@ class LikesController < ApplicationController
         end
    end
 
+   def destroy
+    @like=current_user.likes.find(params[:id])
+    chef=@like.chef
+        if @like.destroy
+            render json: {like: "destroy successfull"}
+        else
+            render json: {like: "destroy failed"}
+        end
+   end
+
    private
    def find_chef
     @chef=Chef.find(like_params)
