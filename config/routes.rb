@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users, only: [:create]
+      get 'users/:id', to: 'users#user_info'
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
 
   get 'chef/:id/comments', to: 'comments#chef_comments'
   get 'bookings/:id/chef', to: 'bookings#chef_bookings'
+  get 'bookings/:id/user', to: 'bookings#user_bookings'
   
   # resources :sightings
   # get '/birds' => 'birds#index'

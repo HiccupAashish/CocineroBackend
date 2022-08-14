@@ -2,8 +2,8 @@ class Api::V2::ChefsController < ApplicationController
     skip_before_action :authorized_user
     before_action :authorize_chef, except: [:create, :index]
     def index
-        chefs=Chef.all
-        render json: {chef: chefs },status: :accepted
+        @chefs=Chef.all
+        render json: {chef: ChefSerializer.new(@chefs) },status: :accepted
   
     end
    
@@ -30,6 +30,6 @@ class Api::V2::ChefsController < ApplicationController
 
     private
     def chef_params
-        params.require(:chef).permit(:name,:email,:password,:bio1,:bio2,:lat,:lng,:address,:img1,:img2,:img3)
+        params.require(:chef).permit(:name,:email,:password,:bio1,:bio2,:lat,:lng,:address,:images,:avatar)
     end
 end
